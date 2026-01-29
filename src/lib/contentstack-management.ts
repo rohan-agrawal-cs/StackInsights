@@ -5,7 +5,7 @@
 const API_KEY = import.meta.env.VITE_CONTENTSTACK_API_KEY;
 const MANAGEMENT_TOKEN = import.meta.env.VITE_CONTENTSTACK_MANAGEMENT_TOKEN;
 const API_HOST = 'https://api.contentstack.io';
-const ENVIRONMENT = 'dev'; // Change to your environment
+const ENVIRONMENT = import.meta.env.VITE_CONTENTSTACK_ENVIRONMENT; // Change to your environment
 
 interface ContentField {
   context?: string;
